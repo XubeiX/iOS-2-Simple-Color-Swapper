@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		75E3C13E2168BC1300E1E5C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E3C13D2168BC1300E1E5C9 /* AppDelegate.swift */; };
-		75E3C1402168BC1300E1E5C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E3C13F2168BC1300E1E5C9 /* ViewController.swift */; };
+		75E3C1402168BC1300E1E5C9 /* ColorPresenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E3C13F2168BC1300E1E5C9 /* ColorPresenterVC.swift */; };
 		75E3C1432168BC1300E1E5C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E3C1412168BC1300E1E5C9 /* Main.storyboard */; };
 		75E3C1452168BC1400E1E5C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75E3C1442168BC1400E1E5C9 /* Assets.xcassets */; };
 		75E3C1482168BC1400E1E5C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E3C1462168BC1400E1E5C9 /* LaunchScreen.storyboard */; };
+		75E3C1502168C29F00E1E5C9 /* ColorPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E3C14F2168C29F00E1E5C9 /* ColorPickerVC.swift */; };
+		75E3C1532168C3E800E1E5C9 /* ColorTransferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E3C1522168C3E800E1E5C9 /* ColorTransferDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		75E3C13A2168BC1300E1E5C9 /* Simple Color Swapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Color Swapper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E3C13D2168BC1300E1E5C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75E3C13F2168BC1300E1E5C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75E3C13F2168BC1300E1E5C9 /* ColorPresenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPresenterVC.swift; sourceTree = "<group>"; };
 		75E3C1422168BC1300E1E5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75E3C1442168BC1400E1E5C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75E3C1472168BC1400E1E5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75E3C1492168BC1400E1E5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75E3C14F2168C29F00E1E5C9 /* ColorPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerVC.swift; sourceTree = "<group>"; };
+		75E3C1522168C3E800E1E5C9 /* ColorTransferDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTransferDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,32 @@
 		75E3C13C2168BC1300E1E5C9 /* Simple Color Swapper */ = {
 			isa = PBXGroup;
 			children = (
+				75E3C1542168C3EE00E1E5C9 /* Delegates */,
+				75E3C1512168C2BB00E1E5C9 /* VC */,
 				75E3C13D2168BC1300E1E5C9 /* AppDelegate.swift */,
-				75E3C13F2168BC1300E1E5C9 /* ViewController.swift */,
 				75E3C1412168BC1300E1E5C9 /* Main.storyboard */,
 				75E3C1442168BC1400E1E5C9 /* Assets.xcassets */,
 				75E3C1462168BC1400E1E5C9 /* LaunchScreen.storyboard */,
 				75E3C1492168BC1400E1E5C9 /* Info.plist */,
 			);
 			path = "Simple Color Swapper";
+			sourceTree = "<group>";
+		};
+		75E3C1512168C2BB00E1E5C9 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				75E3C13F2168BC1300E1E5C9 /* ColorPresenterVC.swift */,
+				75E3C14F2168C29F00E1E5C9 /* ColorPickerVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		75E3C1542168C3EE00E1E5C9 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				75E3C1522168C3E800E1E5C9 /* ColorTransferDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75E3C1402168BC1300E1E5C9 /* ViewController.swift in Sources */,
+				75E3C1402168BC1300E1E5C9 /* ColorPresenterVC.swift in Sources */,
+				75E3C1532168C3E800E1E5C9 /* ColorTransferDelegate.swift in Sources */,
 				75E3C13E2168BC1300E1E5C9 /* AppDelegate.swift in Sources */,
+				75E3C1502168C29F00E1E5C9 /* ColorPickerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
